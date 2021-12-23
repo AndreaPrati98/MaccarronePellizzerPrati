@@ -1,0 +1,39 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.7 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer opens a thread in the forum \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The farmer wants to share some thoughts
+    \item The farmer is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Title of the thread and description of the thread\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The farmer opens the application
+    \item The farmer clicks on the "Forum" button
+    \item The system display the screen relative to the forum
+    \item The farmer taps on the button "Open a Thread"
+    \item The system displays a forum asking for a title for the thread and the description of the thread
+    \item The farmer fills up the fields
+    \item The farmer clicks on the "Confirm" button
+    \item The system opens the required thread
+    \item The system shows the new thread to all the farmer which navigate through the forum
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The farmer successfully publish their new thread on the forum\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+The system have a new thread
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & 
+\begin{itemize}
+    \item The title of the thread provided by the farmer has already been used
+    \item The farmer closes the application before clicking the "Confirm" button. By doing so all the content are saved as draft for the next time the farmer wants to open a new thread 
+
+\end{itemize}
+\\ \hline
+\caption{Use case 1.7 - Farmer opens a thread in the forum}
+\\
+\end{longtable}

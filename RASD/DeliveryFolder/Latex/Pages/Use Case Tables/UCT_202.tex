@@ -1,0 +1,36 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 2.2 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Agronomist takes charge of a chat request \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The agronomist has a chat request pending
+    \item The request has been issued by a farmer that belongs to the same area of the agronomist
+    \item The agronomist is already registered in the system
+    \item The agronomist has logged in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & A message from the agronomist\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The system notifies the agronomist that a farmer has requested to chat with them
+    \item The agronomist taps on the notification
+    \item The system shows the agronomist the list of pending chat requests
+    \item The agronomist selects a chat request and clicks on "Process request"
+    \item The system opens a chat between the farmer who requested it and the agronomist
+    \item The notifies shows both to the farmer and to the agronomist that the chat is open
+    \item The agronomist writes the first message in the chat
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The chat is opened.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & There exists a chat between the agronomist and the farmer\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+\begin{itemize}
+    \item The agronomist closes the chat before clicking on “Process request”, so the chat request is still “pending”
+    \item The agronomist clicks on “Process request” but in the meanwhile the request was opened by another agronomist in the same area. The system shows them an error message: “This chat request is already opened by another agronomist”
+\end{itemize}
+\\ \hline
+\caption{Use case 2.2 - Agronomist takes charge of a chat request}
+\\
+\end{longtable}

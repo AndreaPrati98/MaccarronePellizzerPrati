@@ -1,0 +1,42 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 2.4 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Agronomist confirms a scheduled visit\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The agronomist has logged in
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} &
+\begin{itemize}
+    \item The daily schedule of the agronomist
+    \item A visit that the agronomist has completed
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The agronomist opens the application
+    \item The system shows the agronomist their dashboard
+    \item The agronomist taps on the "Schedule" button
+    \item The system shows the agronomist their daily schedule
+    \item The agronomist selects a visit and confirms it by clicking on "Done"
+    \item The system shows a form that allows the agronomist to insert data about measurements taken during the visit and a report of the visit. The report of the visit is marked as mandatory.
+    \item The agronomist fills in the form
+    \item The agronomist clicks on "Confirm"
+    \item The system stores the data in the database
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The system has updated the schedule with the confirmed visit and it has stored the data concerning the confirmed visit.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+\begin{itemize}
+    \item The report of the visit
+    \item (Optional) Data about measurements taken by the agronomist
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+The agronomist does not fill the report field of the form, thus it is impossible to confirm the visit
+\\ \hline
+\caption{Use case 2.4 - Agronomist confirms a scheduled visit}
+\\
+\end{longtable}

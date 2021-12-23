@@ -1,0 +1,41 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.5 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer rejects a visit proposal \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item An agronomist scheduled a visit to the farmer's farm
+    \item The farmer is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Visit proposal by an agronomist\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The system notifies the farmer that there is a visit proposal
+    \item The farmer taps on the notification
+    \item The farmer clicks on "Request a Visit"
+    \item The system shows details about the proposed visit, such as the date and the time of the visit
+    \item The farmer rejects the visit by clicking on the "Reject" button
+    \item The system shows the farmer a form asking to propose new dates for the visit
+    \item The farmer selects new dates and clicks on "Propose Dates"
+    \item The system confirms the farmer that the dates have been forwarded to the agronomist
+    \item The system notifies the agronomist about the rejection and shows them the new proposed dates
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The agronomist is notified that the farmer has rejected the visit\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+\begin{itemize}
+    \item A notification is sent on the agronomist's device.
+    \item A notification is sent on the farmer's device.
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & 
+\begin{itemize}
+    \item The farmer tries to reject the upcoming visit on the same day of the visit which is forbidden by the system
+    \item The farmer does not confirm nor rejects the proposed visit. In this case the system should continue pushing the notification containing the proposed visit.
+\end{itemize}
+\\ \hline
+\caption{Use case 1.5 - Farmer rejects a visit proposal}
+\\
+\end{longtable}

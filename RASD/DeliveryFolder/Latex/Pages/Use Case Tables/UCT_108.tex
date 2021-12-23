@@ -1,0 +1,28 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.8 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer participates to a thread in a forum \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} & The farmer is already registered in the system \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & A message sent by the farmer\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The farmer opens the application
+    \item The farmer clicks on the "Forum" button
+    \item The system display the screen relative to the forum, and in particular the list of all the thread order by the most recent to the least recent 
+    \item The farmer selects a thread
+    \item The system displays all the messages belonging to the thread and the form used to append new messages to the thread itself
+    \item The farmer appends a message to the thread 
+    \item The farmer clicks on the "Comment" button
+    \item The system appends the new message to the thread
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The farmer successfully publish their message into the thread\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+The thread has a new message in it
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & The Farmer closes the application before clicking the "Comment" button. By doing so all the content is lost.
+\\ \hline
+\caption{Use case 1.8 - Farmer participates to a thread in a forum}
+\\
+\end{longtable}

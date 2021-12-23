@@ -1,0 +1,45 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.1 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Registration of the farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The farmer is not already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Farmer's credentials\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The farmer opens the application
+    \item The farmer clicks on the button "Sign Up"
+    \item The system shows the registration form
+    \item The farmer inserts their email and a password
+    \item The system sends a confirmation email to the farmer
+    \item The farmer confirms their email by clicking in the link received by email
+    \item The system shows a form asking for the role of the farmer
+    \item The farmer selects the option "Farmer"
+    \item The system displays a form asking for data regarding the farmer's farm
+    \item The farmer inserts data about their farm
+    \item The system calculate the priority of the farm w.r.t. the list of farms belonging to the same area
+    \item The system displays information about the area the farmer belongs to
+    \item The system displays the list of agronomists the farmer will be able to reach
+    \item The system sends a confirmation email to the farmer
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & Registration has been successful. The farmer's data is stored into the system's database. The farmer then will be able to login in the system by using their credentials.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+\begin{itemize}
+    \item A verification email is sent to the farmer
+    \item A confirmation email is sent to the farmer
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+\begin{itemize}
+    \item The farmer is already registered into the system. The system then will prevent the user to register themselves twice.
+    \item The farmer provides an invalid email. The farmer then will not be able to confirm their email.
+\end{itemize}
+\\ \hline
+\caption{Use case 1.1 - Registration of the farmer}
+\\
+\end{longtable}

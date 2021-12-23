@@ -1,0 +1,39 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 2.6 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Agronomist opens a thread in the forum \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The agronomist wants to share some thoughts
+    \item The agronomist is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Title of the thread and description of the thread\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The agronomist opens the application
+    \item The agronomist clicks on the "Forum" button
+    \item The system display the screen relative to the forum
+    \item The agronomist taps on the button "Open a Thread"
+    \item The system displays a forum asking for a title for the thread and the description of the thread
+    \item The agronomist fills up the fields
+    \item The agronomist clicks on the "Confirm" button
+    \item The system opens the required thread
+    \item The system shows the new thread to all the agronomist which navigate through the forum
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The agronomist successfully publish their new thread on the forum\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+The system have a new thread
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & 
+\begin{itemize}
+    \item The title of the thread provided by the agronomist has already been used
+    \item The agronomist closes the application before clicking the "Confirm" button. By doing so all the content are saved as draft for the next time the agronomist wants to open a new thread 
+
+\end{itemize}
+\\ \hline
+\caption{Use case 2.6 - Agronomist opens a thread in the forum}
+\\
+\end{longtable}

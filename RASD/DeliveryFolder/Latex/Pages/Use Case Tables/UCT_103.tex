@@ -1,0 +1,39 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.3 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer asks for a visit \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The farmer needs help
+    \item The farmer is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & The farmer inserts a description of the problem they are facing\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The farmer has a problem
+    \item The farmer opens the application
+    \item The farmer clicks on "Request a Visit"
+    \item The system shows a form asking for information about the problem the farmer is facing
+    \item The farmer inserts the required information
+    \item The farmer clicks on "Send Request"
+    \item The system acquires the data sent by the farmer
+    \item The system updates the priority of the farm
+    \item The system confirms that the request has been successful
+    \item The system shows, in the farmer interface, the request as "pending"
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The priority of the farm is updated. putting it on top of the list of farms belonging to the same area. Moreover the farm is marked in such a way that agronomists will be able to notice that the farmer has requested a visit.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+The priority of the farm is updated putting it on top of the list of farms belonging to the same area. Moreover the farm is marked in such a way that agronomists will be able to notice that the farmer has requested a visit.
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+\begin{itemize}
+    \item The farmer misses to fill one or more mandatory fields during the chat request. The system then will show an error such as ""in order to open the chat request you need to fill up all the mandatory fields.
+    \item The farmer closes the chat without clicking on "Send Request". By doing so the request is never sent but remains in the Farmer’s chat interface as a draft.
+\end{itemize}
+\\ \hline
+\caption{Use case 1.3 - Farmer asks for a visit}
+\\
+\end{longtable}

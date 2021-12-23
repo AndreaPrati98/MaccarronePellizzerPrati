@@ -1,0 +1,43 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 2.5 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Agronomist cancels a scheduled visit\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The agronomist has logged in
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} &
+\begin{itemize}
+    \item The daily schedule of the agronomist
+    \item A visit that the agronomist can not attend
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The agronomist opens the application
+    \item The system shows the agronomist their dashboard
+    \item The agronomist taps on the "Schedule" button
+    \item The system shows the agronomist their schedule
+    \item The agronomist selects a visit and cancels it by clicking on "Cancel"
+    \item The system shows a form that allows the agronomist to send a message to the farmer in order to explain why the visit can not take place as scheduled.
+    \item The agronomist fills in the form
+    \item The agronomist clicks on "Confirm"
+    \item The system notifies the farmer about the cancelled visit
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} &
+\begin{itemize}
+    \item The system has updated the schedule considering the canceled visit
+    \item The farmer is notified that the scheduled visit has been canceled
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & A notification is sent to the farmer.
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+The agronomist tries to cancel a visit that is already confirmed. The system forbids the operation.
+\\ \hline
+\caption{Use case 2.5 - Agronomist cancels a scheduled visit}
+\\
+\end{longtable}

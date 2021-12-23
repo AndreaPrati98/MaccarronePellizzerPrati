@@ -1,0 +1,40 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.6 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer and Agronomist interact through the chat \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer and Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The farmer has an open chat with an agronomist
+    \item The farmer is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Messages in the chat\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The notification "A chat has been opened" is received by the farmer
+    \item The farmer taps on the notification
+    \item The system shows the farmer the first message written by the agronomist
+    \item The farmer reads the answer and in case there are more doubt they can keep asking questions using the chat
+    \item The system notifies the agronomist that one ore more messages have been written in the chat
+    \item The agronomist taps on the notification
+    \item The system shows the agronomist the new messages
+    \item The agronomist reads the new messages and replies to them
+    \item ...
+    \item When the conversation is over the agronomist send a request to close the chat
+    \item The system notifies the farmer that the agronomist wants to close the chat
+    \item The farmer approves the action of the agronomist by clicking on "Confirm"
+    \item The system closes the chat
+    \item The system saves the chat history in its databases
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The farmer gets all the answer they needed from the agronomist, which, therefore, proposes to close the chat\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+Chat history
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & 
+The agronomist proposes to close the chat, but the farmer ignores the notification. In this case the system closes the chat automatically in 24h. 
+\\ \hline
+\caption{Use case 1.6 - Farmer and Agronomist interact through the chat}
+\\
+\end{longtable}

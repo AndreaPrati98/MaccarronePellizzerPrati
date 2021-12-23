@@ -1,0 +1,34 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.4 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer accepts a visit proposal \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item An agronomist scheduled a visit to the farmer's farm
+    \item The farmer is already registered in the system
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Visit proposal by an agronomist\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The system notifies the farmer that there is a visit proposal
+    \item The farmer taps on the notification
+    \item The farmer clicks on "Request a Visit"
+    \item The system shows details about the proposed visit, such as the date and the time of the visit
+    \item The farmer accepts the visit by clicking on the "Confirm" button
+    \item The system shows both to the farmer and to the agronomist that the visit has been scheduled
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The farmer accepts the proposed visit.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+\begin{itemize}
+    \item A notification is sent on the agronomist's device.
+    \item A notification is sent on the farmer's device.
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & The farmer does not confirm nor rejects the proposed visit. In this case the system should continue pushing the notification containing the proposed visit.
+\\ \hline
+\caption{Use case 1.4 - Farmer accepts a visit proposal}
+\\
+\end{longtable}

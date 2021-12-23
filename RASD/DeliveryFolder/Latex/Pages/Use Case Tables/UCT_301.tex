@@ -1,0 +1,38 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}} \textbf{ID}  & 3.1 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}} \textbf{Name} & Registration of the Policy Maker \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Policy Maker \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} & The policy maker is not already registered in the system \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Policy maker's credentials \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The policy maker opens the application
+    \item The policy maker clicks on the button "Sign Up"
+    \item The system shows the registration form
+    \item The policy maker inserts their email and a password
+    \item The system sends a confirmation email to the policy maker
+    \item The policy maker confirms their email by clicking in the link received by email
+    \item The system shows a form asking for the role of the policy maker
+    \item The farmer selects the option "Policy maker"
+    \item The system shows a form asking for the personal information used in order to identify the policy maker
+    \item The policy maker inserts the requested data
+    \item The system sends a confirmation email to the Policy Maker
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & Registration has been successful. The farmer's data is stored into the system's database. The policy maker then will be able to login in the system by using their credentials.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & 
+\begin{itemize}
+    \item A verification email is sent to the Policy Maker
+    \item A confirmation email is sent to the Policy Maker
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+\begin{itemize}
+    \item The Policy Maker is already registered into the system. The system then will prevent the user to register themselves twice.
+    \item The Policy Maker provides an invalid email. The Policy Maker then will not be able to confirm their email.
+\end{itemize}
+\\ \hline
+\caption{Use case 3.1 - Registration of the Policy Maker}
+\\
+\end{longtable}

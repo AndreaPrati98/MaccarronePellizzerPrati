@@ -1,0 +1,31 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 1.9 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Farmer inserts data about production \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Farmer \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The farmer is already registered in the system
+    \item The farmer has already done the harvest
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & Farm's production data\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The farmer opens the application
+    \item The farmer clicks on the "Production Data" button
+    \item The system display a form asking for information about the latest harvest 
+    \item The farmer fills up the form with data relative to their production
+    \item The farmer clicks on the "Confirm" button
+    \item The system stores the data inside a database
+    \item The system updates the priority of the farm
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The farmer successfully inserts the data regarding their production\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & NULL
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} & The Farmer closes the application before clicking the "Confirm" button. By doing so all the content is lost.
+\\ \hline
+\caption{Use case 1.9 - Farmer inserts data about production}
+\\
+\end{longtable}

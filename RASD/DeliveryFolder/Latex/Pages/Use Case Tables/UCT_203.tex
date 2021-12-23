@@ -1,0 +1,35 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 2.3 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & Agronomist schedules a visit to a farm\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & Agronomist \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The agronomist has is registered in the system
+    \item The agronomist has logged in
+    \item The agronomist wants to add a visit to their schedule
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & NULL \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The agronomist opens the application
+    \item The system shows the agronomist their dashboard
+    \item The agronomist taps on the "Farms List" button
+    \item The system shows the list of the farms, that belong to the area of the agronomist, ordered by priority and possibly marked if the farmer requested a visit
+    \item The agronomist selects the top farm and clicks on "Schedule a visit"
+    \item The system opens the schedule of the agronomist and asks them when they want to visit the selected farm
+    \item The agronomist selects the date and the time in which they want to visit the farm
+    \item The agronomist clicks on "Confirm"
+    \item The system updates the agronomist’s schedule adding this visit
+    \item The system sends the information about the upcoming visit to the farmer
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & The visit has been successfully inserted in the agronomist’s schedule, and the details have been successfully sent to the farmer.\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & The relative farmer is notified that there is an upcoming visit scheduled\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+The agronomist closes the chat before clicking on "Confirm". In this case the visit is not scheduled and the notification to the farmer is not sent.
+\\ \hline
+\caption{Use case 2.3 - Agronomist schedules a visit to a farm}
+\\
+\end{longtable}

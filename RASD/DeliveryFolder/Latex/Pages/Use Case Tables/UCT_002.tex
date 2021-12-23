@@ -1,0 +1,34 @@
+\begin{longtable}[H]{ | l | p{10cm} | }
+\hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{ID}  & 0.2 \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Name} & User visualizes data summary \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Actors} & User \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Entry conditions} &
+\begin{itemize}
+    \item The user has logged in the system
+    \item The data are stored in the database
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Input} & NULL \\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Event flows} &
+\begin{itemize}
+    \item The user opens the application
+    \item The user clicks on the button "Visualize data"
+    \item The system shows the available data views
+    \item The user selects the data views they are interested in
+    \item The system checks if the user has the right permission to visualize data they are requiring
+    \item The system fetches the required data
+    \item The system displays the required data
+\end{itemize}
+\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exit Condition} & Data are fetched and properly displayed\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Output} & Data summary is displayed\\ \hline
+{\cellcolor[rgb]{0.753,0.753,0.753}}\textbf{Exceptions} &
+\begin{itemize}
+    \item The system fails to fetch data
+    \item The user has not the right permissions to see the requested data
+\end{itemize}
+\\ \hline
+\caption{Use case 0.2 - User visualizes data summary}
+\\
+\end{longtable}
